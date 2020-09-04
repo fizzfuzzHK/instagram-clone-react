@@ -88,21 +88,20 @@ const App = () => {
   }
 
   return (
-    <div className="App">
-    {user?.displayName ? (
-      <ImageUpload username={user.displayName}/>  
-    ): (
-      <h3>Sorry you need to login to upload</h3>
-    )}
-    {/*  */}
-      <div className="app__header">
+    <div className="app">
+       <div className="app__header">
         <img
           className="app__headerImage"
           src="https://en.instagram-brand.com/wp-content/themes/ig-branding/prj-ig-branding/assets/images/ig-logo-black.svg"
           alt=""
         />
       </div>
-
+      {user?.displayName ? (
+        <ImageUpload username={user.displayName}/>  
+      ): (
+        <h3>Sorry you need to login to upload</h3>
+      )}
+      
       <SimpleModal 
         handleOpen={handleOpen} 
         handleClose={handleClose} 
@@ -121,8 +120,6 @@ const App = () => {
         <Button onClick={() => setOpen(true)}>Sign Up</Button>
       </div>
       )}
-
-      <h1>HELLO</h1>
 
       {
         posts.map(({id, post}) => (
