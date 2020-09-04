@@ -1,0 +1,9 @@
+.modal__signUp {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__signIn {
+    display: flex;
+    flex-direction: column;
+}
