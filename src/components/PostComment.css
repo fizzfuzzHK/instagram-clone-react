@@ -1,0 +1,6 @@
+.postComment {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightgray;
+
+}

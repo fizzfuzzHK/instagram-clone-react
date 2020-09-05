@@ -6,6 +6,7 @@ import SimpleModal from './components/Modal';
 import { Button } from '@material-ui/core';
 import ImageUpload from './components/ImageUpload'
 
+
 const App = () => {
   const [posts, setPosts] = useState([])
   const [open, setOpen] = useState(false);
@@ -41,7 +42,8 @@ const App = () => {
     })
   }, [])
   
-  
+  console.log(posts)
+  console.log(username)
   // const signUp = (event) => {
   //   event
   // }
@@ -124,10 +126,9 @@ const App = () => {
       {
         posts.map(({id, post}) => (
           console.log(post),
-          <Post key={id} username={post.username} caption={post.caption} imageUrl={post.imageUrl}/>
+          <Post key={id} postId={id} username={post.username} caption={post.caption} imageUrl={post.imageUrl} loginuser={user.displayName}/>
         ))
       }
-     
     </div>
   );
 }
