@@ -1,22 +1,31 @@
 *{
   margin: 0;
+  margin: 0 auto;
+
 }
 
-.app {
+.app{
+
+}
+
+.app__body {
   background-color: #fafafa;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.app__header {
-  background-color: white;
+.app__main {
   width: 100%;
-  border-bottom: 1px solid lightgray;
+  max-width: 975px;
+  margin-top: 54px;
+  display: flex;
 }
-.app__headerImage {
-  background-color: white;
-  padding: 20px;
-  object-fit: contain;
+
+.app__main__left {
+  margin: 0;
+  padding: 0;
+  max-width: 614px ;
 }

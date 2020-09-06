@@ -1,8 +1,9 @@
 .post {
     background-color: white;
-    max-width: 500px;
+    width: 614px;
     border: 1px solid lightgray;
     margin-bottom: 45px;
+    font-size: 15px;
 }
 
 .post__image {
@@ -14,26 +15,40 @@
 
 .post__text {
     font-weight: normal;
-    padding: 20px;
+    padding: 0 0 5px 20px;
 }
 
 .post__header {
     display: flex;
     align-items: center;
     padding: 20px;
+    height: 10px;
+    float: left;
 }
 
 .post__avatar {
     margin-right: 10px;
+    height:spacing(3);
+    width: 10px;
+}
+
+.post__utility{
+    padding: 8px 8px 8px 20px;
+}
+
+.post__icons{
+    margin-right: 15px;
 }
 
 .post__comments {
-    padding: 20px;
+    padding: 0 0 10px 20px;
 }
 
 .post__comment {
     font-weight: normal;
     margin-bottom: 5px;
+}
 
-    
+.post__showComment__button{
+    padding: 0 0 10px 20px;
 }

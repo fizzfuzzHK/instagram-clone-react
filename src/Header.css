@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    left: 0; /* 追加 */
+    right: 0; /* 追加 */
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+
+.header__inline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 975px;
+    padding: 0 20px;
+    height: 54px;
+
+}
+
+.header__Image {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    flex: 1 9999 0%;
+    -webkit-box-flex: 1;
+    height: 54px;
+}
+
+.header__LogoImage {
+    object-fit: contain;
+    vertical-align: middle;
+    margin-top: 9px;
+}
+
+.header__searchfield{
+    align-items: center;
+    display: flex;
+    margin: 0;
+    flex: 0 1 auto;
+
+
+}
+.header__right {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    /* padding: 20px; */
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+    flex: 1 0 0%;
+}
+
+.header__icons{
+    margin: 0;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 24px;
+    white-space: nowrap;
+}
+
+.header__icon{
+    margin-left: 22px;
+}
